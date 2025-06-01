@@ -85,16 +85,19 @@ fun TransactionNotificationSample() {
                     if (hasNotificationPermission) {
                         onCheckout()
                         scope.launch {
-                            snackbarHostState.showSnackbar("Sipariş verildi! Bildirimler başlıyor...")
+                            snackbarHostState.showSnackbar("Transaction notification sent!")
                         }
                     } else {
+                        scope.launch {
+                            snackbarHostState.showSnackbar("Please allow notification permission to send transaction notifications.")
+                        }
                         permissionLauncher.launch(
                             Manifest.permission.POST_NOTIFICATIONS
                         )
                     }
                 }
             ) {
-                Text("Order")
+                Text("Start Transaction!")
             }
         }
     }

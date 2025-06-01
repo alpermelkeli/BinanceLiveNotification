@@ -151,6 +151,7 @@ object BinanceNotificationManager {
             }
             return progressStyle
         }
+
         @RequiresApi(Build.VERSION_CODES.BAKLAVA)
         fun highlightProgressUpTo(index: Int,
                                   points: MutableList<ProgressStyle.Point>,
@@ -159,7 +160,6 @@ object BinanceNotificationManager {
             val completedColor = Color.GREEN
 
             val fullyTransparent = Color.parseColor("#FF627EEA")
-
 
             for (i in 0 until index) {
                 points[i].setColor(completedColor)
