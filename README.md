@@ -1,1 +1,1 @@
-https://github.com/user-attachments/assets/3f004e07-000b-409a-8c14-1ce4e7cc580c
+![Ekran Kaydı 2025-06-06 15 26 28](https://github.com/user-attachments/assets/c414ddb8-acfc-4b64-8851-f52d001c3a56)
